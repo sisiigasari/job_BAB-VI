@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<h2> Finding HTML Elements Using documet.forms</h2>
+<form id="frm1" action="/action_page.php">
+	First name :<input type="text" name="iname" value="peki"><br>
+	Last Name :<input type="text" name=" iname" value="Herian putra"><br><br>
+	</form>
+
+	<p>Click "Try it" to display the value of each element in the form.</p>
+	<button onclick="myFunction()"> Try it</button>
+	<p id="demo"></p>
+
+	<script> 
+		function.myFunction(){
+			 var x= documet.forms["frm1"];
+			 var text ="";
+			 for (i =0; i < x.length ; i++){
+			 	text +=x.Elements[i].value + "<br>";
+			 }
+			 documet.getElementById("demo").innerHTML=text;
+		}
+	</script>
+</body>
+</html>
